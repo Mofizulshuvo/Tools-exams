@@ -13,7 +13,7 @@ const client = new MongoClient(
 
 async function run() {
   try {
-    await client.connect();
+    // await client.connect();
     console.log("connected with Database");
 
     app.get("/", (req, res) => {

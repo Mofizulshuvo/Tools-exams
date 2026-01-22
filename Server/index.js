@@ -22,6 +22,14 @@ async function run() {
       res.send(responseData);
     });
 
+    app.get("to-do-list", (req, res) => {
+      const Data=Db.client.collection("data").find({status:"pending"}).toArray();
+    });
+
+    app.get("/completed", (req, res) => {
+      const Data=Db.client.collection("data").find({status:"completed"}).toArray();
+    });
+
     app.post("/add", (req, res) => {
       const requestData = req.body;
       const Data = requestData.data;

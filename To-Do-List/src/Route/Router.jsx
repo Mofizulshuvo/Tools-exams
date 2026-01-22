@@ -1,14 +1,9 @@
 import { createBrowserRouter } from "react-router";
-import { loginPage } from "../login/loginPage.jsx";
+import Login from "../Login";
+
 export const Router = createBrowserRouter([
   {
     path: "/",
-    element:"",
-    children: [
-      {
-        path: "/",
-        element:<loginPage/>,
-      },
-    ],
+    element:<Login></Login>
   },
 ]);

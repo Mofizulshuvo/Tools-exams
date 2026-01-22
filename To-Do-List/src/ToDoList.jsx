@@ -36,8 +36,8 @@ const ToDoList = () => {
     <div className="min-h-screen bg-gray-100 p-6">
       <div className="max-w-2xl mx-auto space-y-6">
 
-        <h1 className="text-2xl font-semibold text-gray-800">
-          ToDo List
+        <h1 className="text-2xl text-center font-semibold text-gray-800">
+          To Do List
         </h1>
 
         <div className="bg-blue-600 p-5 rounded-lg shadow-md">
